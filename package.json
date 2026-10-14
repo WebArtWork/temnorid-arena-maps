@@ -1,0 +1,22 @@
+{
+  "name": "com.itkamianets.temnorid-arena-maps",
+  "version": "0.1.0",
+  "displayName": "Temnorid Arena: Maps",
+  "description": "Temnorid Arena arenas as Scene JSON: loads an arena (the same file on server and clients), its props through 3d-unity-assets, and its spawn points for the match. Ships the first arena.",
+  "unity": "6000.6",
+  "license": "MIT",
+  "author": {
+    "name": "IT Kamianets"
+  },
+  "keywords": [
+    "temnorid-arena",
+    "3d-engine",
+    "it-kamianets"
+  ],
+  "dependencies": {
+    "com.itkamianets.3d-unity-core": "0.1.0",
+    "com.itkamianets.3d-unity-scene": "0.1.0",
+    "com.itkamianets.3d-unity-assets": "0.1.0",
+    "com.itkamianets.temnorid-arena-core": "0.1.0"
+  }
+}

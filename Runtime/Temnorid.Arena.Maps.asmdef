@@ -1,0 +1,19 @@
+{
+    "name": "Temnorid.Arena.Maps",
+    "rootNamespace": "Temnorid.Arena.Maps",
+    "references": [
+        "ITKamianets.Engine.Core",
+        "ITKamianets.Engine.Scene",
+        "ITKamianets.Engine.Assets",
+        "Temnorid.Arena.Core"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

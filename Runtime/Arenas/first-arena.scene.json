@@ -1,0 +1,1047 @@
+{
+  "schemaVersion": "1.1.0",
+  "sceneId": "first-arena",
+  "createdAt": "2026-10-14T00:00:00Z",
+  "updatedAt": "2026-10-14T00:00:00Z",
+  "units": "meters",
+  "coordinateSystem": "right-handed-y-up",
+  "origin": {
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    }
+  },
+  "objects": [
+    {
+      "id": "floor",
+      "name": "Floor",
+      "type": "FLOOR",
+      "parentId": null,
+      "transform": {
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "rotation": {
+          "x": 0.7071068,
+          "y": 0,
+          "z": 0,
+          "w": 0.7071068
+        }
+      },
+      "boundary": [
+        {
+          "x": -20,
+          "y": -20
+        },
+        {
+          "x": 20,
+          "y": -20
+        },
+        {
+          "x": 20,
+          "y": 20
+        },
+        {
+          "x": -20,
+          "y": 20
+        }
+      ],
+      "metadata": {
+        "tags": [
+          "surface:stone"
+        ]
+      }
+    },
+    {
+      "id": "walls",
+      "name": "Walls",
+      "type": "GROUP",
+      "parentId": null,
+      "transform": {
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      }
+    },
+    {
+      "id": "wall-north",
+      "name": "wall-north",
+      "type": "WALL_FACE",
+      "parentId": "walls",
+      "transform": {
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": -20
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      },
+      "boundary": [
+        {
+          "x": -20,
+          "y": 0
+        },
+        {
+          "x": 20,
+          "y": 0
+        },
+        {
+          "x": 20,
+          "y": 4
+        },
+        {
+          "x": -20,
+          "y": 4
+        }
+      ],
+      "metadata": {
+        "tags": [
+          "surface:stone"
+        ]
+      }
+    },
+    {
+      "id": "wall-south",
+      "name": "wall-south",
+      "type": "WALL_FACE",
+      "parentId": "walls",
+      "transform": {
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": 20
+        },
+        "rotation": {
+          "x": 0,
+          "y": -1,
+          "z": 0,
+          "w": 0
+        }
+      },
+      "boundary": [
+        {
+          "x": -20,
+          "y": 0
+        },
+        {
+          "x": 20,
+          "y": 0
+        },
+        {
+          "x": 20,
+          "y": 4
+        },
+        {
+          "x": -20,
+          "y": 4
+        }
+      ],
+      "metadata": {
+        "tags": [
+          "surface:stone"
+        ]
+      }
+    },
+    {
+      "id": "wall-east",
+      "name": "wall-east",
+      "type": "WALL_FACE",
+      "parentId": "walls",
+      "transform": {
+        "position": {
+          "x": 20,
+          "y": 0,
+          "z": 0
+        },
+        "rotation": {
+          "x": 0,
+          "y": -0.7071,
+          "z": 0,
+          "w": 0.7071
+        }
+      },
+      "boundary": [
+        {
+          "x": -20,
+          "y": 0
+        },
+        {
+          "x": 20,
+          "y": 0
+        },
+        {
+          "x": 20,
+          "y": 4
+        },
+        {
+          "x": -20,
+          "y": 4
+        }
+      ],
+      "metadata": {
+        "tags": [
+          "surface:stone"
+        ]
+      }
+    },
+    {
+      "id": "wall-west",
+      "name": "wall-west",
+      "type": "WALL_FACE",
+      "parentId": "walls",
+      "transform": {
+        "position": {
+          "x": -20,
+          "y": 0,
+          "z": 0
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0.7071,
+          "z": 0,
+          "w": 0.7071
+        }
+      },
+      "boundary": [
+        {
+          "x": -20,
+          "y": 0
+        },
+        {
+          "x": 20,
+          "y": 0
+        },
+        {
+          "x": 20,
+          "y": 4
+        },
+        {
+          "x": -20,
+          "y": 4
+        }
+      ],
+      "metadata": {
+        "tags": [
+          "surface:stone"
+        ]
+      }
+    },
+    {
+      "id": "cover",
+      "name": "Cover",
+      "type": "GROUP",
+      "parentId": null,
+      "transform": {
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      }
+    },
+    {
+      "id": "platform",
+      "name": "Central platform",
+      "type": "PROP",
+      "parentId": "cover",
+      "transform": {
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      },
+      "volume": {
+        "min": {
+          "x": -3,
+          "y": 0,
+          "z": -3
+        },
+        "max": {
+          "x": 3,
+          "y": 1.2,
+          "z": 3
+        }
+      },
+      "asset": "arena/platform",
+      "metadata": {
+        "tags": [
+          "surface:stone"
+        ]
+      }
+    },
+    {
+      "id": "pillar-1",
+      "name": "Pillar",
+      "type": "PROP",
+      "parentId": "cover",
+      "transform": {
+        "position": {
+          "x": -8,
+          "y": 0,
+          "z": 8
+        },
+        "rotation": {
+          "x": 0,
+          "y": -0.3827,
+          "z": 0,
+          "w": 0.9239
+        }
+      },
+      "volume": {
+        "min": {
+          "x": -0.6,
+          "y": 0,
+          "z": -0.6
+        },
+        "max": {
+          "x": 0.6,
+          "y": 4,
+          "z": 0.6
+        }
+      },
+      "asset": "arena/pillar",
+      "metadata": {
+        "tags": [
+          "surface:stone"
+        ]
+      }
+    },
+    {
+      "id": "pillar-2",
+      "name": "Pillar",
+      "type": "PROP",
+      "parentId": "cover",
+      "transform": {
+        "position": {
+          "x": 8,
+          "y": 0,
+          "z": 8
+        },
+        "rotation": {
+          "x": 0,
+          "y": -0.3827,
+          "z": 0,
+          "w": 0.9239
+        }
+      },
+      "volume": {
+        "min": {
+          "x": -0.6,
+          "y": 0,
+          "z": -0.6
+        },
+        "max": {
+          "x": 0.6,
+          "y": 4,
+          "z": 0.6
+        }
+      },
+      "asset": "arena/pillar",
+      "metadata": {
+        "tags": [
+          "surface:stone"
+        ]
+      }
+    },
+    {
+      "id": "pillar-3",
+      "name": "Pillar",
+      "type": "PROP",
+      "parentId": "cover",
+      "transform": {
+        "position": {
+          "x": -8,
+          "y": 0,
+          "z": -8
+        },
+        "rotation": {
+          "x": 0,
+          "y": -0.3827,
+          "z": 0,
+          "w": 0.9239
+        }
+      },
+      "volume": {
+        "min": {
+          "x": -0.6,
+          "y": 0,
+          "z": -0.6
+        },
+        "max": {
+          "x": 0.6,
+          "y": 4,
+          "z": 0.6
+        }
+      },
+      "asset": "arena/pillar",
+      "metadata": {
+        "tags": [
+          "surface:stone"
+        ]
+      }
+    },
+    {
+      "id": "pillar-4",
+      "name": "Pillar",
+      "type": "PROP",
+      "parentId": "cover",
+      "transform": {
+        "position": {
+          "x": 8,
+          "y": 0,
+          "z": -8
+        },
+        "rotation": {
+          "x": 0,
+          "y": -0.3827,
+          "z": 0,
+          "w": 0.9239
+        }
+      },
+      "volume": {
+        "min": {
+          "x": -0.6,
+          "y": 0,
+          "z": -0.6
+        },
+        "max": {
+          "x": 0.6,
+          "y": 4,
+          "z": 0.6
+        }
+      },
+      "asset": "arena/pillar",
+      "metadata": {
+        "tags": [
+          "surface:stone"
+        ]
+      }
+    },
+    {
+      "id": "pillar-5",
+      "name": "Pillar",
+      "type": "PROP",
+      "parentId": "cover",
+      "transform": {
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": 13
+        },
+        "rotation": {
+          "x": 0,
+          "y": -0.3827,
+          "z": 0,
+          "w": 0.9239
+        }
+      },
+      "volume": {
+        "min": {
+          "x": -0.6,
+          "y": 0,
+          "z": -0.6
+        },
+        "max": {
+          "x": 0.6,
+          "y": 4,
+          "z": 0.6
+        }
+      },
+      "asset": "arena/pillar",
+      "metadata": {
+        "tags": [
+          "surface:stone"
+        ]
+      }
+    },
+    {
+      "id": "pillar-6",
+      "name": "Pillar",
+      "type": "PROP",
+      "parentId": "cover",
+      "transform": {
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": -13
+        },
+        "rotation": {
+          "x": 0,
+          "y": -0.3827,
+          "z": 0,
+          "w": 0.9239
+        }
+      },
+      "volume": {
+        "min": {
+          "x": -0.6,
+          "y": 0,
+          "z": -0.6
+        },
+        "max": {
+          "x": 0.6,
+          "y": 4,
+          "z": 0.6
+        }
+      },
+      "asset": "arena/pillar",
+      "metadata": {
+        "tags": [
+          "surface:stone"
+        ]
+      }
+    },
+    {
+      "id": "pillar-7",
+      "name": "Pillar",
+      "type": "PROP",
+      "parentId": "cover",
+      "transform": {
+        "position": {
+          "x": -13,
+          "y": 0,
+          "z": 0
+        },
+        "rotation": {
+          "x": 0,
+          "y": -0.3827,
+          "z": 0,
+          "w": 0.9239
+        }
+      },
+      "volume": {
+        "min": {
+          "x": -0.6,
+          "y": 0,
+          "z": -0.6
+        },
+        "max": {
+          "x": 0.6,
+          "y": 4,
+          "z": 0.6
+        }
+      },
+      "asset": "arena/pillar",
+      "metadata": {
+        "tags": [
+          "surface:stone"
+        ]
+      }
+    },
+    {
+      "id": "pillar-8",
+      "name": "Pillar",
+      "type": "PROP",
+      "parentId": "cover",
+      "transform": {
+        "position": {
+          "x": 13,
+          "y": 0,
+          "z": 0
+        },
+        "rotation": {
+          "x": 0,
+          "y": -0.3827,
+          "z": 0,
+          "w": 0.9239
+        }
+      },
+      "volume": {
+        "min": {
+          "x": -0.6,
+          "y": 0,
+          "z": -0.6
+        },
+        "max": {
+          "x": 0.6,
+          "y": 4,
+          "z": 0.6
+        }
+      },
+      "asset": "arena/pillar",
+      "metadata": {
+        "tags": [
+          "surface:stone"
+        ]
+      }
+    },
+    {
+      "id": "crate-1",
+      "name": "Crate",
+      "type": "PROP",
+      "parentId": "cover",
+      "transform": {
+        "position": {
+          "x": -4,
+          "y": 0,
+          "z": -9
+        },
+        "rotation": {
+          "x": 0,
+          "y": -0.0872,
+          "z": 0,
+          "w": 0.9962
+        }
+      },
+      "volume": {
+        "min": {
+          "x": -0.6,
+          "y": 0,
+          "z": -0.6
+        },
+        "max": {
+          "x": 0.6,
+          "y": 1.2,
+          "z": 0.6
+        }
+      },
+      "asset": "arena/crate",
+      "metadata": {
+        "tags": [
+          "surface:wood"
+        ]
+      }
+    },
+    {
+      "id": "crate-2",
+      "name": "Crate",
+      "type": "PROP",
+      "parentId": "cover",
+      "transform": {
+        "position": {
+          "x": 5,
+          "y": 0,
+          "z": 10
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0.1736,
+          "z": 0,
+          "w": 0.9848
+        }
+      },
+      "volume": {
+        "min": {
+          "x": -0.6,
+          "y": 0,
+          "z": -0.6
+        },
+        "max": {
+          "x": 0.6,
+          "y": 1.2,
+          "z": 0.6
+        }
+      },
+      "asset": "arena/crate",
+      "metadata": {
+        "tags": [
+          "surface:wood"
+        ]
+      }
+    },
+    {
+      "id": "crate-3",
+      "name": "Crate",
+      "type": "PROP",
+      "parentId": "cover",
+      "transform": {
+        "position": {
+          "x": -11,
+          "y": 0,
+          "z": 4
+        },
+        "rotation": {
+          "x": 0,
+          "y": -0.2588,
+          "z": 0,
+          "w": 0.9659
+        }
+      },
+      "volume": {
+        "min": {
+          "x": -0.6,
+          "y": 0,
+          "z": -0.6
+        },
+        "max": {
+          "x": 0.6,
+          "y": 1.2,
+          "z": 0.6
+        }
+      },
+      "asset": "arena/crate",
+      "metadata": {
+        "tags": [
+          "surface:wood"
+        ]
+      }
+    },
+    {
+      "id": "crate-4",
+      "name": "Crate",
+      "type": "PROP",
+      "parentId": "cover",
+      "transform": {
+        "position": {
+          "x": 12,
+          "y": 0,
+          "z": -5
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      },
+      "volume": {
+        "min": {
+          "x": -0.6,
+          "y": 0,
+          "z": -0.6
+        },
+        "max": {
+          "x": 0.6,
+          "y": 1.2,
+          "z": 0.6
+        }
+      },
+      "asset": "arena/crate",
+      "metadata": {
+        "tags": [
+          "surface:wood"
+        ]
+      }
+    },
+    {
+      "id": "crate-5",
+      "name": "Crate",
+      "type": "PROP",
+      "parentId": "cover",
+      "transform": {
+        "position": {
+          "x": -6,
+          "y": 0,
+          "z": 14
+        },
+        "rotation": {
+          "x": 0,
+          "y": -0.1305,
+          "z": 0,
+          "w": 0.9914
+        }
+      },
+      "volume": {
+        "min": {
+          "x": -0.6,
+          "y": 0,
+          "z": -0.6
+        },
+        "max": {
+          "x": 0.6,
+          "y": 1.2,
+          "z": 0.6
+        }
+      },
+      "asset": "arena/crate",
+      "metadata": {
+        "tags": [
+          "surface:wood"
+        ]
+      }
+    },
+    {
+      "id": "crate-6",
+      "name": "Crate",
+      "type": "PROP",
+      "parentId": "cover",
+      "transform": {
+        "position": {
+          "x": 9,
+          "y": 0,
+          "z": -14
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0.0872,
+          "z": 0,
+          "w": 0.9962
+        }
+      },
+      "volume": {
+        "min": {
+          "x": -0.6,
+          "y": 0,
+          "z": -0.6
+        },
+        "max": {
+          "x": 0.6,
+          "y": 1.2,
+          "z": 0.6
+        }
+      },
+      "asset": "arena/crate",
+      "metadata": {
+        "tags": [
+          "surface:wood"
+        ]
+      }
+    },
+    {
+      "id": "spawns",
+      "name": "Spawns",
+      "type": "GROUP",
+      "parentId": null,
+      "transform": {
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      }
+    },
+    {
+      "id": "spawn-1",
+      "name": "Spawn 1",
+      "type": "MARKER",
+      "parentId": "spawns",
+      "transform": {
+        "position": {
+          "x": 0,
+          "y": 0.05,
+          "z": -16
+        },
+        "rotation": {
+          "x": 0,
+          "y": 1,
+          "z": 0,
+          "w": 0
+        }
+      },
+      "metadata": {
+        "tags": [
+          "spawn"
+        ]
+      }
+    },
+    {
+      "id": "spawn-2",
+      "name": "Spawn 2",
+      "type": "MARKER",
+      "parentId": "spawns",
+      "transform": {
+        "position": {
+          "x": 11.3137,
+          "y": 0.05,
+          "z": -11.3137
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0.9239,
+          "z": 0,
+          "w": 0.3827
+        }
+      },
+      "metadata": {
+        "tags": [
+          "spawn"
+        ]
+      }
+    },
+    {
+      "id": "spawn-3",
+      "name": "Spawn 3",
+      "type": "MARKER",
+      "parentId": "spawns",
+      "transform": {
+        "position": {
+          "x": 16,
+          "y": 0.05,
+          "z": 0
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0.7071,
+          "z": 0,
+          "w": 0.7071
+        }
+      },
+      "metadata": {
+        "tags": [
+          "spawn"
+        ]
+      }
+    },
+    {
+      "id": "spawn-4",
+      "name": "Spawn 4",
+      "type": "MARKER",
+      "parentId": "spawns",
+      "transform": {
+        "position": {
+          "x": 11.3137,
+          "y": 0.05,
+          "z": 11.3137
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0.3827,
+          "z": 0,
+          "w": 0.9239
+        }
+      },
+      "metadata": {
+        "tags": [
+          "spawn"
+        ]
+      }
+    },
+    {
+      "id": "spawn-5",
+      "name": "Spawn 5",
+      "type": "MARKER",
+      "parentId": "spawns",
+      "transform": {
+        "position": {
+          "x": 0,
+          "y": 0.05,
+          "z": 16
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      },
+      "metadata": {
+        "tags": [
+          "spawn"
+        ]
+      }
+    },
+    {
+      "id": "spawn-6",
+      "name": "Spawn 6",
+      "type": "MARKER",
+      "parentId": "spawns",
+      "transform": {
+        "position": {
+          "x": -11.3137,
+          "y": 0.05,
+          "z": 11.3137
+        },
+        "rotation": {
+          "x": 0,
+          "y": -0.3827,
+          "z": 0,
+          "w": 0.9239
+        }
+      },
+      "metadata": {
+        "tags": [
+          "spawn"
+        ]
+      }
+    },
+    {
+      "id": "spawn-7",
+      "name": "Spawn 7",
+      "type": "MARKER",
+      "parentId": "spawns",
+      "transform": {
+        "position": {
+          "x": -16,
+          "y": 0.05,
+          "z": 0
+        },
+        "rotation": {
+          "x": 0,
+          "y": -0.7071,
+          "z": 0,
+          "w": 0.7071
+        }
+      },
+      "metadata": {
+        "tags": [
+          "spawn"
+        ]
+      }
+    },
+    {
+      "id": "spawn-8",
+      "name": "Spawn 8",
+      "type": "MARKER",
+      "parentId": "spawns",
+      "transform": {
+        "position": {
+          "x": -11.3137,
+          "y": 0.05,
+          "z": -11.3137
+        },
+        "rotation": {
+          "x": 0,
+          "y": -0.9239,
+          "z": 0,
+          "w": 0.3827
+        }
+      },
+      "metadata": {
+        "tags": [
+          "spawn"
+        ]
+      }
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "arena",
+      "temnorid-arena"
+    ],
+    "properties": {
+      "title": "First arena",
+      "game": "temnorid-arena"
+    }
+  }
+}

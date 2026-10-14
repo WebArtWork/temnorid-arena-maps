@@ -1,0 +1,82 @@
+{
+  "schemaVersion": "1.0.0",
+  "libraryId": "temnorid-arena-props",
+  "units": "meters",
+  "assets": [
+    {
+      "id": "arena/platform",
+      "name": "Central platform",
+      "kind": "model",
+      "bounds": {
+        "min": {
+          "x": -3,
+          "y": 0,
+          "z": -3
+        },
+        "max": {
+          "x": 3,
+          "y": 1.2,
+          "z": 3
+        }
+      },
+      "placeholder": {
+        "shape": "box",
+        "color": {
+          "r": 0.42,
+          "g": 0.4,
+          "b": 0.38
+        }
+      }
+    },
+    {
+      "id": "arena/pillar",
+      "name": "Pillar",
+      "kind": "model",
+      "bounds": {
+        "min": {
+          "x": -0.6,
+          "y": 0,
+          "z": -0.6
+        },
+        "max": {
+          "x": 0.6,
+          "y": 4,
+          "z": 0.6
+        }
+      },
+      "placeholder": {
+        "shape": "box",
+        "color": {
+          "r": 0.55,
+          "g": 0.52,
+          "b": 0.48
+        }
+      }
+    },
+    {
+      "id": "arena/crate",
+      "name": "Crate",
+      "kind": "model",
+      "bounds": {
+        "min": {
+          "x": -0.6,
+          "y": 0,
+          "z": -0.6
+        },
+        "max": {
+          "x": 0.6,
+          "y": 1.2,
+          "z": 0.6
+        }
+      },
+      "placeholder": {
+        "shape": "box",
+        "color": {
+          "r": 0.55,
+          "g": 0.36,
+          "b": 0.2
+        }
+      }
+    }
+  ]
+}

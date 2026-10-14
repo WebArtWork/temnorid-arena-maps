@@ -1,0 +1,22 @@
+{
+    "name": "Temnorid.Arena.Maps.Tests",
+    "rootNamespace": "Temnorid.Arena.Maps.Tests",
+    "references": [
+        "Temnorid.Arena.Maps",
+        "UnityEngine.TestRunner",
+        "UnityEditor.TestRunner"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll"
+    ],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
