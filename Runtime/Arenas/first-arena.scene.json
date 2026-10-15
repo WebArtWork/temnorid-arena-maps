@@ -823,6 +823,154 @@
       }
     },
     {
+      "id": "low-wall-1",
+      "name": "Low wall",
+      "type": "PROP",
+      "parentId": "cover",
+      "transform": {
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": 7
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      },
+      "volume": {
+        "min": {
+          "x": -1.5,
+          "y": 0,
+          "z": -0.3
+        },
+        "max": {
+          "x": 1.5,
+          "y": 1,
+          "z": 0.3
+        }
+      },
+      "asset": "arena/low-wall",
+      "metadata": {
+        "tags": [
+          "surface:stone"
+        ]
+      }
+    },
+    {
+      "id": "low-wall-2",
+      "name": "Low wall",
+      "type": "PROP",
+      "parentId": "cover",
+      "transform": {
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": -7
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      },
+      "volume": {
+        "min": {
+          "x": -1.5,
+          "y": 0,
+          "z": -0.3
+        },
+        "max": {
+          "x": 1.5,
+          "y": 1,
+          "z": 0.3
+        }
+      },
+      "asset": "arena/low-wall",
+      "metadata": {
+        "tags": [
+          "surface:stone"
+        ]
+      }
+    },
+    {
+      "id": "broken-pillar-1",
+      "name": "Broken pillar",
+      "type": "PROP",
+      "parentId": "cover",
+      "transform": {
+        "position": {
+          "x": -15,
+          "y": 0,
+          "z": -10
+        },
+        "rotation": {
+          "x": 0,
+          "y": -0.1305,
+          "z": 0,
+          "w": 0.9914
+        }
+      },
+      "volume": {
+        "min": {
+          "x": -0.6,
+          "y": 0,
+          "z": -0.6
+        },
+        "max": {
+          "x": 0.6,
+          "y": 2.2,
+          "z": 0.6
+        }
+      },
+      "asset": "arena/broken-pillar",
+      "metadata": {
+        "tags": [
+          "surface:stone"
+        ]
+      }
+    },
+    {
+      "id": "broken-pillar-2",
+      "name": "Broken pillar",
+      "type": "PROP",
+      "parentId": "cover",
+      "transform": {
+        "position": {
+          "x": 15,
+          "y": 0,
+          "z": 10
+        },
+        "rotation": {
+          "x": 0,
+          "y": -0.1305,
+          "z": 0,
+          "w": 0.9914
+        }
+      },
+      "volume": {
+        "min": {
+          "x": -0.6,
+          "y": 0,
+          "z": -0.6
+        },
+        "max": {
+          "x": 0.6,
+          "y": 2.2,
+          "z": 0.6
+        }
+      },
+      "asset": "arena/broken-pillar",
+      "metadata": {
+        "tags": [
+          "surface:stone"
+        ]
+      }
+    },
+    {
       "id": "spawns",
       "name": "Spawns",
       "type": "GROUP",
@@ -863,7 +1011,8 @@
         "tags": [
           "spawn"
         ]
-      }
+      },
+      "asset": "arena/spawn-circle"
     },
     {
       "id": "spawn-2",
@@ -887,7 +1036,8 @@
         "tags": [
           "spawn"
         ]
-      }
+      },
+      "asset": "arena/spawn-circle"
     },
     {
       "id": "spawn-3",
@@ -911,7 +1061,8 @@
         "tags": [
           "spawn"
         ]
-      }
+      },
+      "asset": "arena/spawn-circle"
     },
     {
       "id": "spawn-4",
@@ -935,7 +1086,8 @@
         "tags": [
           "spawn"
         ]
-      }
+      },
+      "asset": "arena/spawn-circle"
     },
     {
       "id": "spawn-5",
@@ -959,7 +1111,8 @@
         "tags": [
           "spawn"
         ]
-      }
+      },
+      "asset": "arena/spawn-circle"
     },
     {
       "id": "spawn-6",
@@ -983,7 +1136,8 @@
         "tags": [
           "spawn"
         ]
-      }
+      },
+      "asset": "arena/spawn-circle"
     },
     {
       "id": "spawn-7",
@@ -1007,7 +1161,8 @@
         "tags": [
           "spawn"
         ]
-      }
+      },
+      "asset": "arena/spawn-circle"
     },
     {
       "id": "spawn-8",
@@ -1031,7 +1186,295 @@
         "tags": [
           "spawn"
         ]
+      },
+      "asset": "arena/spawn-circle"
+    },
+    {
+      "id": "decor",
+      "name": "Decor",
+      "type": "GROUP",
+      "parentId": null,
+      "transform": {
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
       }
+    },
+    {
+      "id": "brazier-1",
+      "name": "Brazier",
+      "type": "PROP",
+      "parentId": "decor",
+      "transform": {
+        "position": {
+          "x": -17,
+          "y": 0,
+          "z": 17
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      },
+      "volume": {
+        "min": {
+          "x": -0.4,
+          "y": 0,
+          "z": -0.4
+        },
+        "max": {
+          "x": 0.4,
+          "y": 1.4,
+          "z": 0.4
+        }
+      },
+      "asset": "arena/brazier",
+      "metadata": {
+        "tags": [
+          "surface:metal"
+        ]
+      }
+    },
+    {
+      "id": "brazier-2",
+      "name": "Brazier",
+      "type": "PROP",
+      "parentId": "decor",
+      "transform": {
+        "position": {
+          "x": 17,
+          "y": 0,
+          "z": 17
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      },
+      "volume": {
+        "min": {
+          "x": -0.4,
+          "y": 0,
+          "z": -0.4
+        },
+        "max": {
+          "x": 0.4,
+          "y": 1.4,
+          "z": 0.4
+        }
+      },
+      "asset": "arena/brazier",
+      "metadata": {
+        "tags": [
+          "surface:metal"
+        ]
+      }
+    },
+    {
+      "id": "brazier-3",
+      "name": "Brazier",
+      "type": "PROP",
+      "parentId": "decor",
+      "transform": {
+        "position": {
+          "x": -17,
+          "y": 0,
+          "z": -17
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      },
+      "volume": {
+        "min": {
+          "x": -0.4,
+          "y": 0,
+          "z": -0.4
+        },
+        "max": {
+          "x": 0.4,
+          "y": 1.4,
+          "z": 0.4
+        }
+      },
+      "asset": "arena/brazier",
+      "metadata": {
+        "tags": [
+          "surface:metal"
+        ]
+      }
+    },
+    {
+      "id": "brazier-4",
+      "name": "Brazier",
+      "type": "PROP",
+      "parentId": "decor",
+      "transform": {
+        "position": {
+          "x": 17,
+          "y": 0,
+          "z": -17
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      },
+      "volume": {
+        "min": {
+          "x": -0.4,
+          "y": 0,
+          "z": -0.4
+        },
+        "max": {
+          "x": 0.4,
+          "y": 1.4,
+          "z": 0.4
+        }
+      },
+      "asset": "arena/brazier",
+      "metadata": {
+        "tags": [
+          "surface:metal"
+        ]
+      }
+    },
+    {
+      "id": "banner-north",
+      "name": "Banner",
+      "type": "PROP",
+      "parentId": "decor",
+      "transform": {
+        "position": {
+          "x": 0,
+          "y": 0.6,
+          "z": -19.75
+        },
+        "rotation": {
+          "x": 0,
+          "y": -1,
+          "z": 0,
+          "w": 0
+        }
+      },
+      "asset": "arena/banner"
+    },
+    {
+      "id": "banner-south",
+      "name": "Banner",
+      "type": "PROP",
+      "parentId": "decor",
+      "transform": {
+        "position": {
+          "x": 0,
+          "y": 0.6,
+          "z": 19.75
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        }
+      },
+      "asset": "arena/banner"
+    },
+    {
+      "id": "banner-east",
+      "name": "Banner",
+      "type": "PROP",
+      "parentId": "decor",
+      "transform": {
+        "position": {
+          "x": 19.75,
+          "y": 0.6,
+          "z": 0
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0.7071,
+          "z": 0,
+          "w": 0.7071
+        }
+      },
+      "asset": "arena/banner"
+    },
+    {
+      "id": "banner-west",
+      "name": "Banner",
+      "type": "PROP",
+      "parentId": "decor",
+      "transform": {
+        "position": {
+          "x": -19.75,
+          "y": 0.6,
+          "z": 0
+        },
+        "rotation": {
+          "x": 0,
+          "y": -0.7071,
+          "z": 0,
+          "w": 0.7071
+        }
+      },
+      "asset": "arena/banner"
+    },
+    {
+      "id": "rubble-1",
+      "name": "Rubble",
+      "type": "PROP",
+      "parentId": "decor",
+      "transform": {
+        "position": {
+          "x": -18,
+          "y": 0,
+          "z": 10
+        },
+        "rotation": {
+          "x": 0,
+          "y": -0.1736,
+          "z": 0,
+          "w": 0.9848
+        }
+      },
+      "asset": "arena/rubble"
+    },
+    {
+      "id": "rubble-2",
+      "name": "Rubble",
+      "type": "PROP",
+      "parentId": "decor",
+      "transform": {
+        "position": {
+          "x": 17,
+          "y": 0,
+          "z": -12
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0.3007,
+          "z": 0,
+          "w": 0.9537
+        }
+      },
+      "asset": "arena/rubble"
     }
   ],
   "metadata": {

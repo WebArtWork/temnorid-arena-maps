@@ -9,5 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Asset catalogs and floor/wall materials on `ArenaMap`; more props in the first arena (braziers, banners, low walls, broken pillars, rubble, spawn circles); the generator kept in `Tools~`.
+
+### Added
+
 - Initial Unity package structure (`Runtime`, `Editor`, `Tests` assemblies).
 - `ArenaMap`; first arena and its placeholder prop library.

@@ -3,6 +3,7 @@ using ITKamianets.Engine.Assets;
 using ITKamianets.Engine.Assets.Model;
 using ITKamianets.Engine.Core;
 using ITKamianets.Engine.Scene;
+using ITKamianets.Engine.Scene.Model;
 using Temnorid.Arena.Core;
 using UnityEngine;
 
@@ -22,7 +23,16 @@ namespace Temnorid.Arena.Maps
         [Tooltip("Asset libraries (3d-asset-schema JSON) for the arena's props.")]
         [SerializeField] private TextAsset[] assetLibraries = new TextAsset[0];
 
-        [Tooltip("Floors and walls. Empty: a plain lit material.")]
+        [Tooltip("Asset ids mapped to models made in Unity (e.g. imported GLB files). Checked before the libraries' files and placeholders.")]
+        [SerializeField] private AssetCatalog[] catalogs = new AssetCatalog[0];
+
+        [Tooltip("Floors. Empty: the surface material.")]
+        [SerializeField] private Material floorMaterial;
+
+        [Tooltip("Walls. Empty: the surface material.")]
+        [SerializeField] private Material wallMaterial;
+
+        [Tooltip("Other surfaces, and floors and walls without their own. Empty: a plain lit material.")]
         [SerializeField] private Material surfaceMaterial;
 
         private readonly List<Pose> _spawns = new List<Pose>();
@@ -47,6 +57,16 @@ namespace Temnorid.Arena.Maps
             }
         }
 
+        private Material MaterialFor(SceneObject surface)
+        {
+            switch (surface.Type)
+            {
+                case SemanticLabel.FLOOR: return floorMaterial;
+                case SemanticLabel.WALL_FACE: return wallMaterial;
+                default: return null;
+            }
+        }
+
         /// <summary>Loads an arena, replacing the one shown now.</summary>
         public LoadedScene Load(string sceneJson)
         {
@@ -56,6 +76,11 @@ namespace Temnorid.Arena.Maps
             }
 
             var assets = EngineAssets.Default;
+            foreach (var catalog in catalogs)
+            {
+                assets.AddCatalog(catalog);
+            }
+
             foreach (var library in assetLibraries)
             {
                 if (library != null)
@@ -74,6 +99,7 @@ namespace Temnorid.Arena.Maps
             Loaded = SceneLoader.Load(sceneJson, transform, new SceneLoadOptions
             {
                 SurfaceMaterial = surfaceMaterial,
+                SurfaceMaterialFor = MaterialFor,
                 AssetResolver = assets,
             });
 

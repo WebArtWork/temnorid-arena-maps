@@ -77,6 +77,156 @@
           "b": 0.2
         }
       }
+    },
+    {
+      "id": "arena/low-wall",
+      "name": "Low wall",
+      "kind": "model",
+      "bounds": {
+        "min": {
+          "x": -1.5,
+          "y": 0,
+          "z": -0.3
+        },
+        "max": {
+          "x": 1.5,
+          "y": 1,
+          "z": 0.3
+        }
+      },
+      "placeholder": {
+        "shape": "box",
+        "color": {
+          "r": 0.55,
+          "g": 0.52,
+          "b": 0.48
+        }
+      }
+    },
+    {
+      "id": "arena/broken-pillar",
+      "name": "Broken pillar",
+      "kind": "model",
+      "bounds": {
+        "min": {
+          "x": -0.6,
+          "y": 0,
+          "z": -0.6
+        },
+        "max": {
+          "x": 0.6,
+          "y": 2.2,
+          "z": 0.6
+        }
+      },
+      "placeholder": {
+        "shape": "box",
+        "color": {
+          "r": 0.55,
+          "g": 0.52,
+          "b": 0.48
+        }
+      }
+    },
+    {
+      "id": "arena/rubble",
+      "name": "Rubble",
+      "kind": "model",
+      "bounds": {
+        "min": {
+          "x": -1,
+          "y": 0,
+          "z": -0.75
+        },
+        "max": {
+          "x": 1,
+          "y": 0.5,
+          "z": 0.75
+        }
+      },
+      "placeholder": {
+        "shape": "box",
+        "color": {
+          "r": 0.5,
+          "g": 0.47,
+          "b": 0.43
+        }
+      }
+    },
+    {
+      "id": "arena/brazier",
+      "name": "Brazier",
+      "kind": "model",
+      "bounds": {
+        "min": {
+          "x": -0.4,
+          "y": 0,
+          "z": -0.4
+        },
+        "max": {
+          "x": 0.4,
+          "y": 1.4,
+          "z": 0.4
+        }
+      },
+      "placeholder": {
+        "shape": "capsule",
+        "color": {
+          "r": 0.25,
+          "g": 0.22,
+          "b": 0.2
+        }
+      }
+    },
+    {
+      "id": "arena/banner",
+      "name": "Banner",
+      "kind": "model",
+      "bounds": {
+        "min": {
+          "x": -0.6,
+          "y": 0,
+          "z": -0.15
+        },
+        "max": {
+          "x": 0.6,
+          "y": 3,
+          "z": 0.15
+        }
+      },
+      "placeholder": {
+        "shape": "box",
+        "color": {
+          "r": 0.3,
+          "g": 0.12,
+          "b": 0.15
+        }
+      }
+    },
+    {
+      "id": "arena/spawn-circle",
+      "name": "Spawn circle",
+      "kind": "model",
+      "bounds": {
+        "min": {
+          "x": -1,
+          "y": 0,
+          "z": -1
+        },
+        "max": {
+          "x": 1,
+          "y": 0.02,
+          "z": 1
+        }
+      },
+      "placeholder": {
+        "shape": "box",
+        "color": {
+          "r": 0.4,
+          "g": 0.6,
+          "b": 0.9
+        }
+      }
     }
   ]
 }
